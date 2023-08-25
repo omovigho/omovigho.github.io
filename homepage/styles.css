@@ -1,0 +1,170 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;
+}
+
+html{
+    /*font-size: 62.5%;*/
+    /*overflow-x: hidden;*/
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding:2rem 1%;
+}
+
+marquee{
+    font-size: 2rem;
+    color: blue;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+
+
+#image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+  #nav{
+    position: relative;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+  
+  }
+  #nav ul{
+    list-style-type: none;
+  }
+  
+  #nav ul li a{
+  display:block;
+  padding:.5em;
+  border-radius:.5em;
+  margin:.5em;
+  font-size: 1.5rem;
+  border:1px solid #ba89a8;
+   }
+   #nav ul a:focus{
+     color:#fc6;
+     border-color:#fff;
+  }
+  #nav ul a:hover{
+     color:#fc6;
+     border-color:#fff;
+  }
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+.main .content{
+    flex: 1 1 10rem;
+}
+
+.main .content p{
+    color:black;
+    font-size: 2rem;
+    padding:.5rem 0;
+}
+.main .image{
+    flex: 1 1 40rem;
+}
+.main .image img{
+    width: 100%;
+}
+
+footer{
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background: #666;
+}
+footer .fox-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem,1fr));
+}
+footer .fox-container .fox #contact{
+    text-align: center;
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:black;
+}
+footer .fox-container .fox a{
+    display: block;
+    padding:.2rem 0;
+    font-size: 1.5rem;
+    color:white;
+}
+footer .fox-container .fox a:hover{
+    text-decoration: underline;
+    color: rgb(226, 25, 25);
+}
+
+/* lifestyle styling*/
+.imgLife{
+  
+    width: 100%;
+    height: 150px;
+    padding-bottom: 100px;
+}
+
+.imgLife img{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.imgSport{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 100px;
+}
+
+.imgSport img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.time {
+    color: blue;
+    font-size: 1.2rem;
+    padding:.5em;
+    border-radius:.5em; 
+    background-color: black;
+    margin-bottom: 15px;
+}
+.showTime {
+    color: blue;
+    font-size: 1.2rem;
+    padding:.5em;
+    border-radius:.5em;
+    margin-bottom: 30px;
+}
+
