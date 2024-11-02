@@ -23,7 +23,7 @@ body{
 .general{
     position: relative;
     max-width: 1500px;
-overflow: hidden;
+    overflow: hidden;
     
 }
 header{
@@ -37,7 +37,7 @@ header{
 .hero-img{
     position: absolute;
     right: -7em;
-    top: 82%;
+    top: 72%;
     transform: translateY(-40%);
     width: 720px;
     height: auto;
@@ -59,6 +59,15 @@ header{
   font-family: "Pacifico", cursive;
   text-align: center;
   color: var(--color-primary);
+}
+.section-content ul{
+    list-style: none;
+    padding-left: 1.5em;
+}
+.section-content ul li {
+    background: url('images/rainbow.png') no-repeat left center;
+    background-size: 1em;
+    padding-left: 1.5em;
 }
 @keyframes floating-bg {
     0%, 100%{
@@ -181,7 +190,7 @@ header h1{
 
 header h3{
     color: var(--color-primary);
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-family: monospace;
     margin-top: -5vh;
 }
@@ -292,8 +301,13 @@ border-image:var(--gradient-bg) 1 ; */
 }
 .skill-name{
     display: flex;
-  align-items: center;
-  gap: .5em;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.skill-name img{
+    height: 5.0rem;
 }
 .high{
     height: 100%;
@@ -326,10 +340,22 @@ border-image:var(--gradient-bg) 1 ; */
 }
 
 
-.footer-btn{
+.footer-bt{
     text-align: center;
     margin-top: 2em;
     margin-bottom: 5em;
+}
+.footer-btn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-auto-rows: 230px;
+    gap: 5em 1em;
+    padding:3.5em 0 5em ;
+}
+
+.footer-img a img{
+    height : 10.3rem;
+    object-fit: cover;
 }
 .cta{
     color: var(--color-primary);
