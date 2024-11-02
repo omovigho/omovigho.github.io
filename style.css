@@ -37,7 +37,7 @@ header{
 .hero-img{
     position: absolute;
     right: -7em;
-    top: 50%;
+    top: 82%;
     transform: translateY(-40%);
     width: 720px;
     height: auto;
@@ -174,9 +174,16 @@ font-size: 1.2rem;
 
 header h1{
     color: var(--color-primary);
-    font-size: 4.3rem;
+    font-size: 2.7rem;
     font-family: monospace;
-    margin-top: 8vh;
+    margin-top: 10vh;
+}
+
+header h3{
+    color: var(--color-primary);
+    font-size: 1.7rem;
+    font-family: monospace;
+    margin-top: -5vh;
 }
 
 .code{
