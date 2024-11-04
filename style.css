@@ -31,8 +31,32 @@ header{
     /* padding-bottom: 3em; */
     font-family: monospace;
     position: relative;
-
 }
+
+.nav-bar{
+    background: linear-gradient(90deg, #1A237E, #0D47A1);
+    max-width: 1500px;
+}
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 
 .hero-img{
     position: absolute;
@@ -193,6 +217,10 @@ header h3{
     font-size: 2.2rem;
     font-family: monospace;
     margin-top: -5vh;
+}
+
+#canvasOne{
+    z-index: -100;
 }
 
 .code{
@@ -649,4 +677,51 @@ border-image:var(--gradient-bg) 1 ; */
         right: -8.5em;
     } */
  
+}
+
+
+/* Hide nav-links by default on mobile */
+
+  
+  /* Optional styling for mobile view */
+  
+
+
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        flex-direction: horizontal;
+        text-align: center;
+        background: linear-gradient(90deg, #1A237E, #0D47A1);
+        gap: 0;
+        overflow: hidden;
+        font-size: 4rem;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon i{
+        color: #fff;
+        font-size: 30px;
+    }
+    .menuList{
+        transition: all 0.5s;
+    }
 }
