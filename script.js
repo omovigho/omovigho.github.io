@@ -3,6 +3,7 @@
 document.addEventListener(
     'DOMContentLoaded', () =>
 {
+    
     const header = document.querySelector('.header');
     const nav = document.querySelector('.nav')
     const allSections = document.querySelectorAll('.sect')
