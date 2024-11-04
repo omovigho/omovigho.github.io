@@ -57,6 +57,15 @@ nav ul{
     align-items: center;
 }
 
+.menu-icon{
+    display: none;
+}
+#canvasOne{
+    width: 600px;
+    height: 200px;
+    font-size: 2.5rem;
+    margin-left: -3rem;
+}
 
 .hero-img{
     position: absolute;
@@ -219,9 +228,6 @@ header h3{
     margin-top: -5vh;
 }
 
-#canvasOne{
-    z-index: -100;
-}
 
 .code{
     font-size: 18px;
@@ -406,12 +412,18 @@ border-image:var(--gradient-bg) 1 ; */
             font-size: 1.2rem;
         } 
     .hero-img {
-        
+        top: 22vh;
         width: 655px;
     }
 
     header h4 {
         font-size: 1.2rem;
+    }
+    #canvasOne{
+        width: 500px;
+        height: 200px;
+        font-size: 1.4rem;
+        margin-left: -3rem;
     }
 }
 
@@ -465,6 +477,12 @@ border-image:var(--gradient-bg) 1 ; */
 
 
 @media (max-width:850px) {
+    #canvasOne{
+        width: 400px;
+        height: 120px;
+        font-size: 1.5rem;
+        margin-left: -3rem;
+    }
     .hero-img{
         position: absolute;
         right: -7em;
@@ -549,12 +567,39 @@ border-image:var(--gradient-bg) 1 ; */
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 695px){
+    #canvasOne{
+        width: 350px;
+        height: 140px;
+        font-size: 2.5rem;
+        margin-left: -2.5rem;
+        position: relative;
+        display: inline-flex;
+    }
     header{
         margin-left: -3rem;
     }
 }
 
+@media screen and (max-width: 589px){
+    #canvasOne{
+        margin-top: -8rem;
+        letter-spacing: 3px;
+        font-family: monospace;
+        width: 350px;
+        height: 300px;
+        font-size: 2.5rem;
+        margin-left: -2.5rem;
+        background-color: transparent;
+    }
+    .welcome-text{
+        margin-top: -9rem;
+        z-index: 21;
+    }
+    header{
+        margin-left: -3rem;
+    }
+}
 @media screen and (max-width: 600px) {
    
     header {
@@ -601,6 +646,17 @@ border-image:var(--gradient-bg) 1 ; */
     header h1, header h3 {
         font-size: 1.2rem;
         
+    }
+    nav ul{
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    nav ul li{
+        padding: 5px;
+        padding-top: 0;
     }
     
 }
