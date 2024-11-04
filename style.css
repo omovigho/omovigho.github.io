@@ -549,165 +549,60 @@ border-image:var(--gradient-bg) 1 ; */
     }
 }
 
-@media screen and (max-width: 707px){
-
+@media screen and (max-width: 700px){
+    header{
+        margin-left: -3rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    .nav-sticky{
-        padding: 0 1.8em;
-    }
    
-             .logo {
-        font-size: 1.3rem;
-    }
-    nav{
-        height: 3rem;
-    }
-    .nav-links{
-        font-size: .8rem;
-        } 
-        .nav-link.active{
-            border-bottom: 1.5px solid;
-        }
-        .nav-links li{
-            margin-left: 1.1em;
-                  }
-        header h1 {
-            font-size: 2.3rem;
-            margin-top:5vh;
-        }
-        .code {
-            font-size: 10px;
-        }
-        /* .hero-img {
-            width: 450px;
-            right: -10em;
-        } */
-        header h4 {
-            font-size: .93rem;
-            /* width: 70%; */
-        }
-        .section h2{
-            font-size: 2.15rem;
-            }
-            .section-content{
-                font-size: .9rem;
-            }
-        .contact-btn {
-            font-size: .9rem;
-          
-        }
-        .skill{
-            font-size: 1.1rem;
-        }
-        .single-work h3{
-            font-size: 1.2rem;
-          
-          }
-          .cta{
-            font-size: 2.5rem;
-        }
-    }
-@media screen and (max-width: 450px) {
-    .nav-links li{
-        margin-left: .7em;
-              }
-    .nav-links{
-        font-size: .7rem;
-        } 
-        .code {
-            font-size: 9px;
-        } 
+    header {
+        margin-left: -4rem;
+        margin-top: 17vh;
+        /* width: 70%; */
+    } 
+    header h1, header h3 {
+        font-size: 1.5rem;
         
-        .nav-sticky{
-            padding: 0 1.8em;
-        }
-        .logo {
-            font-size: 1.2rem;
-        }
-        header h1 {
-            font-size: 2rem;
-            margin-top:4vh;
-        }
-        /* .contact-btn {
-            font-size: .85rem;
-          
-        }
-      
-        .hero-img {
-            width: 360px;
-            right: -8.5em;
-        }
-        header h4 {
-            font-size: .75rem;
-        }
-        .section h2{
-            font-size: 2rem;
-            }
-            .section-content{
-                font-size: .75rem;
-            } */
-            .single-work h3{
-                font-size: 1rem;
-              
-              }
-   
-              .cta{
-                font-size: 1.8rem;
-            }
-}
-
-@media screen and (max-width: 385px) {
-    
-    .nav-links li{
-        margin-left: .7em;
-              }
-    .nav-links{
-        font-size: .65rem;
-        } 
-        .logo {
-            font-size: 1.0rem;
-        }
-        header h1 {
-            font-size: 1.9rem;
-            margin-top:4vh;
-        }
-        .cta{
-            font-size: 1.5rem;
-        }
-    /* .contact-btn {
-        font-size: .75rem;
-      
     }
-   
-    .section h2{
-        font-size: 1.85rem;
-        } */
-     
-    /* .hero-img {
-        width: 350px;
-        right: -8.5em;
-    } */
- 
+    .hero-img{
+        top: 18%;
+        transform: translateY(-40%);
+        width: 400px;
+    }
 }
 
-
-/* Hide nav-links by default on mobile */
-
-  
-  /* Optional styling for mobile view */
-  
-
-
-
-.menu-icon{
-    display: none;
+@media screen and (max-width: 450px) {
+    .hero-img{
+        top: 36%;
+        transform: translateY(-40%);
+        width: 300px;
+    }
+    header{
+        margin-top: 10vh;
+        line-height: 3rem;
+    }
+    header .welcome-text {
+        line-height: 1.3rem;
+        
+    }
 }
-
-.menu-icon i{
-    color: #fff;
-    font-size: 30px;
+@media screen and (max-width: 385px) {
+    .hero-img{
+        top: 22%;
+        transform: translateY(-40%);
+        width: 300px;
+    }
+    header{
+        margin-top: 10vh;
+        line-height: 2.5rem;
+    }
+    header h1, header h3 {
+        font-size: 1.2rem;
+        
+    }
+    
 }
 
 @media (max-width:600px) {
