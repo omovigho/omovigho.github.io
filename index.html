@@ -16,24 +16,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
   <!-- font-family: "Work Sans", sans-serif; -->
 
+  <!-- font awesome cdn link  -->
+  
   <link rel="stylesheet" href="style.css" />
+
+  <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
   <div class="general">
-    <header class="header sect" id="section--1">
-      <nav class="nav">
+    <div class="nav-bar">
+      <nav class="nav" id="navbar">
         <div class="logo gradient-color">Omovigho</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="menuList">
           <li><a href="#section--1" class="nav-link active">Home</a></li>
           <li><a href="#section--2" class="nav-link">About</a></li>
           <li><a href="#section--3" class="nav-link">Skills</a></li>
           <li><a href="#section--4" class="nav-link">Projects</a></li>
           <li><a href="#section--5" class="nav-link">Contact</a></li>
         </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" style="color: #fff;" onclick="toggleMenu()"></i>
+      </div>
       </nav>
-
+    </div>
+    <header class="header sect" id="section--1">
       <div class="info">
         <img src="images/photo.png" alt="profile image" class="hero-img" />
         <h1>
@@ -44,7 +52,7 @@
           <br />
           <br>
         </h1>
-        <h3>Backend developer</h3>
+        <h3>Backend developer </h3>
 
         <h4>
           <canvas id="canvasOne" width="600" height="90"></canvas>
@@ -215,10 +223,23 @@
     </section>
 
 
-
-
-
   </div>
+
+  <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
 </body>
 
 </html>
