@@ -61,10 +61,10 @@ nav ul{
 .hero-img{
     position: absolute;
     right: -7em;
-    top: 72%;
+    top: 25%;
     transform: translateY(-40%);
     width: 720px;
-    height: auto;
+    height: 100vh;
     animation: floating-bg 4s ease-in-out infinite;
     z-index: -50;
 }
@@ -464,7 +464,32 @@ border-image:var(--gradient-bg) 1 ; */
 }
 
 
+@media (max-width:850px) {
+    .hero-img{
+        position: absolute;
+        right: -7em;
+        top: 42%;
+        transform: translateY(-40%);
+        width: 460px;
+        height: auto;
+        animation: floating-bg 4s ease-in-out infinite;
+        z-index: -50;
+    }
+}
+
 @media screen and (max-width: 809px) {
+    .welcome-text{
+        margin-right: 30%;
+    }
+    .hero-img{
+        top: 27%;
+        transform: translateY(-30%);
+        width: 460px;
+        height: 100vh;
+    }
+
+    welcome-text
+    
     .sect{
         padding-left: 2.5em;
         padding-right: 2.5em;
@@ -487,10 +512,6 @@ border-image:var(--gradient-bg) 1 ; */
         .code {
             font-size: 14px;
         }
-        /* .hero-img {
-            width: 500px;
-            right: -10em;
-        } */
         header h4 {
             font-size: 1rem;
             width: 95%;
@@ -506,18 +527,6 @@ border-image:var(--gradient-bg) 1 ; */
             font-size: 1rem;
           
         }
-   .hero-img {
-        /* position: absolute;
-    /* right: -; */
-    /* top: ; */
-    /* bottom: 0; */
-    display: none;
-    /* transform: translateY(-00%); */
-    /* width: 720px; */ 
-    /* height: auto; */
-    /* animation: floating-bg 4s ease-in-out infinite; */
-    /* z-index: -50; */
-    }
     .hero-img-mobile{
     display: block;
     animation: floating-bg-mobile 4s ease-in-out infinite;
@@ -538,6 +547,10 @@ border-image:var(--gradient-bg) 1 ; */
     .cta{
         font-size: 3.2rem;
     }
+}
+
+@media screen and (max-width: 707px){
+
 }
 
 @media screen and (max-width: 600px) {
@@ -698,6 +711,7 @@ border-image:var(--gradient-bg) 1 ; */
 }
 
 @media (max-width:600px) {
+    
     nav ul{
         position: absolute;
         top: 45px;
@@ -723,5 +737,18 @@ border-image:var(--gradient-bg) 1 ; */
     }
     .menuList{
         transition: all 0.5s;
+    }
+}
+
+@media (max-width:400px) {
+    nav ul{
+        display: flex;
+        gap: 9px;
+        align-items: center;
+    }
+
+    nav ul li{
+        padding: 10px;
+        padding-top: 0;
     }
 }
