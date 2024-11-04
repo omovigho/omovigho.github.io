@@ -584,12 +584,12 @@ border-image:var(--gradient-bg) 1 ; */
 @media screen and (max-width: 589px){
     #canvasOne{
         margin-top: -8rem;
-        letter-spacing: 3px;
-        font-family: monospace;
+        letter-spacing: 1.5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         width: 350px;
         height: 300px;
         font-size: 2.5rem;
-        margin-left: -2.5rem;
+        margin-left: -3.1rem;
         background-color: transparent;
     }
     .welcome-text{
