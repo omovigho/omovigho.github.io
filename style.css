@@ -63,8 +63,9 @@ nav ul{
 #canvasOne{
     width: 600px;
     height: 200px;
-    font-size: 2.5rem;
-    margin-left: -3rem;
+    margin-left: -1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
 }
 
 .hero-img{
@@ -194,16 +195,6 @@ font-size: 1.2rem;
     transition: .25s;
 
 }
-
-/* .nav-link.active::before{
-    content: "";
-    position: absolute;
-    border-bottom: 3px solid;
-    border-image: var(--gradient-bg)  1;
-    width: 2rem;
-    bottom: -8px; */
-    
-/* } */
 
 .nav-links li a:hover{
     background: var(--gradient-bg);
@@ -422,7 +413,7 @@ border-image:var(--gradient-bg) 1 ; */
     #canvasOne{
         width: 500px;
         height: 200px;
-        font-size: 1.4rem;
+        
         margin-left: -3rem;
     }
 }
@@ -480,7 +471,6 @@ border-image:var(--gradient-bg) 1 ; */
     #canvasOne{
         width: 400px;
         height: 120px;
-        font-size: 1.5rem;
         margin-left: -3rem;
     }
     .hero-img{
@@ -571,7 +561,6 @@ border-image:var(--gradient-bg) 1 ; */
     #canvasOne{
         width: 350px;
         height: 140px;
-        font-size: 2.5rem;
         margin-left: -2.5rem;
         position: relative;
         display: inline-flex;
@@ -581,25 +570,6 @@ border-image:var(--gradient-bg) 1 ; */
     }
 }
 
-@media screen and (max-width: 589px){
-    #canvasOne{
-        margin-top: -8rem;
-        letter-spacing: 1.5px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        width: 350px;
-        height: 300px;
-        font-size: 2.5rem;
-        margin-left: -3.5rem;
-        background-color: transparent;
-    }
-    .welcome-text{
-        margin-top: -9rem;
-        z-index: 21;
-    }
-    header{
-        margin-left: -3rem;
-    }
-}
 @media screen and (max-width: 600px) {
    
     header {
@@ -616,52 +586,105 @@ border-image:var(--gradient-bg) 1 ; */
         transform: translateY(-40%);
         width: 400px;
     }
+    #canvasOne{
+        margin-top: -4.0rem;
+        letter-spacing: 1.5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: 350px;
+        height: 200px;
+        margin-left: -1rem;
+        background-color: transparent;
+    }
+    .welcome-text{
+        margin-top: -3.9rem;
+    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 547px){
+    #canvasOne{
+        font-size: 1.0rem;
+        margin-top: -4.0rem;
+        letter-spacing: 1.5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: 350px;
+        height: 200px;
+        margin-left: -2.5rem;
+        background-color: transparent;
+    }
     .hero-img{
-        top: 36%;
+        top: 26%;
         transform: translateY(-40%);
         width: 300px;
     }
-    header{
-        margin-top: 10vh;
-        line-height: 3rem;
+    .welcome-text{
+        margin-top: -3.9rem;
+        z-index: 21;
     }
-    header .welcome-text {
-        line-height: 1.3rem;
-        
+    header{
+        margin-left: -3rem;
     }
 }
-@media screen and (max-width: 385px) {
+
+@media screen and (max-width: 450px) {
+    
+    nav ul li{
+        font-size: .7rem;
+    }
     .hero-img{
         top: 22%;
         transform: translateY(-40%);
         width: 300px;
     }
     header{
-        margin-top: 10vh;
-        line-height: 2.5rem;
+        margin-top: 20vh;
+        line-height: 3rem;
+    }
+    header .welcome-text {
+        line-height: 1.3rem;
+        
+    }
+    #canvasOne{
+        width: 300px;
+        height: 200px;
+        font-size: 1.0rem;
+        margin-left: -3rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .hero-img{
+        top: 22%;
+        transform: translateY(-40%);
+        width: 300px;
     }
     header h1, header h3 {
         font-size: 1.2rem;
         
     }
-    nav ul{
-        display: flex;
-        gap: 0px;
-        align-items: center;
-        font-size: 1.5rem;
-    }
-
+    
     nav ul li{
-        padding: 5px;
-        padding-top: 0;
+        font-size: .6rem;
+        padding: 0px;
+    }
+    #canvasOne{
+        width: 300px;
+        height: 200px;
+        font-size: .8rem;
+        margin-left: -3rem;
+    }
+    .welcome-text{
+        margin-top: -4.9rem;
     }
     
 }
 
 @media (max-width:600px) {
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background: linear-gradient(90deg, #1A237E, #0D47A1);
+    }
     
     nav ul{
         position: absolute;
