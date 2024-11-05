@@ -190,11 +190,11 @@ function canvasApp() {
         context.fillStyle = background;
         context.fillRect(0, 0, theCanvas.width, theCanvas.height);
         //Text
-        var computedStyle = window.getComputedStyle(theCanvas);
+        //var computedStyle = window.getComputedStyle(theCanvas);
         var fontSize = computedStyle.fontSize;
 
         // Set the context.font value with the extracted font size
-        context.font = `${fontSize}`;
+        context.font = `${fontSize}`+ " " + "impact";
         context.textAlign = "center";
         context.textBaseline = "middle";
         var metrics = context.measureText(message);
