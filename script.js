@@ -58,7 +58,7 @@ document.addEventListener(
             if(index >= text.length){
                 clearInterval(interval);
             }
-        }, 100)
+        }, 300)
     }
     // scrambleText();
     
